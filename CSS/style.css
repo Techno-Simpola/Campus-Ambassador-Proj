@@ -147,6 +147,77 @@ h2{
     transform: translateY(-10px);
 }
 
+/************************************** MID-SECTION ******************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.MID{
+    height: 100%;
+    margin: 0;
+    font-family: 'Open sans', sans-serif;
+    line-height: 180%;
+    color: rgb(255, 255, 255);
+    background-color: #323232;
+    text-align: center;
+}
+
+
+.first-img{
+    background-image: linear-gradient(rgba(65, 68, 65, 0.66),rgba(33, 34, 32, 0.748)),url('../IMAGES/students.jpg');
+    min-height: 100%;
+}
+
+.second-img{
+background-image: linear-gradient(rgba(65, 68, 65, 0.66),rgba(33, 34, 32, 0.748)),url('../IMAGES/students_1.jpg');
+    min-height: 60%;
+    padding: 10%;
+}
+
+.third-img{
+    background-image: linear-gradient(rgba(65, 68, 65, 0.66),rgba(33, 34, 32, 0.748)),url('../IMAGES/office_3.jpg');
+    min-height: 100%;
+    padding: 10%;
+    
+}
+
+.first-img, .second-img, .third-img{
+   position: relative;
+   opacity: .86;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+}
+
+section{
+    padding: 50px 80px;
+}
+
+.heading_12{
+    padding: 10%;
+    top: 50%;
+    width: 100%;
+    font-size: 650%;
+    font-weight: bold;
+    text-shadow: 0 0 15px #000;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+
+}
+
+@media(max-width: 768px){
+    .heading_12{
+        font-size: 250%;
+    }
+
+    h1{
+        font-size: 95%;
+    }
+
+    p{
+        font-size: 90%;
+    }
+}
 
 
 
