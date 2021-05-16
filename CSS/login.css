@@ -80,7 +80,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(to right, rgb(38, 38, 39), rgb(0, 0, 153));
+background-color: #000000;
+background-image: linear-gradient(90deg,#000000 0%, #04619f 89%);
     ;
 }
 
@@ -91,7 +92,8 @@ body {
 }
 
 .navbar {
-    background-image: linear-gradient(to right, rgb(38, 38, 39), rgb(0, 0, 153));
+background-color: #000000;
+background-image: linear-gradient(90deg,#000000 0%, #04619f 89%);
     padding: 0 !important;
 }
 
@@ -181,7 +183,8 @@ body {
     height: 100%;
     width: 100%;
     place-items: center;
-    background-image: linear-gradient(to right, rgb(38, 38, 39), rgb(0, 0, 153));
+background-color: #000000;
+background-image: linear-gradient(90deg,#000000 0%, #04619f 89%);
 }
 
 .wrapper {
@@ -197,10 +200,11 @@ body {
     font-weight: 600;
     text-align: center;
     line-height: 100px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     user-select: none;
     border-radius: 15px 15px 0 0;
-    background-image: linear-gradient(45deg, rgb(211, 111, 4), rgb(255, 0, 0))
+    background-color: #fbb034;
+background-image: linear-gradient(90deg, #fbb034 0%, #ffdd00 89%);
 }
 
 .wrapper form {
@@ -235,22 +239,24 @@ form .field input:valid {
     top: 50%;
     left: 20px;
     color: #999;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 17px;
     pointer-events: none;
     transform: translateY(-50%);
     transition: all 0.3s ease;
+    font-weight: bolder;
 }
 
 form .field .log:hover{
-     background-image: linear-gradient(45deg, rgb(144, 80, 11), rgb(128, 5, 5))
+      background-color: #fbb034;
+background-image: linear-gradient(90deg, #fbb034 0%, #ffdd00 89%);
 }
 form .field input:focus~label,
 form .field input:valid~label {
     top: 0%;
     font-size: 16px;
     color: #ff5e78;
-    background: #fff;
+    background: rgb(255, 255, 255);
     transform: translateY(-50%);
 }
 
@@ -285,20 +291,21 @@ form .content .pass-link a {
 }
 
 form .field input[type="submit"] {
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-weight: 800;
     border: none;
     padding-left: 0;
     margin-top: -10px;
     font-size: 20px;
     cursor: pointer;
-    background-image: linear-gradient(45deg, rgb(211, 111, 4), rgb(255, 0, 0));
+      background-color: #fbb034;
+background-image: linear-gradient(90deg, #fbb034 0%, #ffdd00 89%);
     transition: all 0.3s ease;
 }
+
 form .field input[type="submit"]:active {
     transform: scale(0.95);
 }
-
 
 form .signup-link {
     color: #262626;
