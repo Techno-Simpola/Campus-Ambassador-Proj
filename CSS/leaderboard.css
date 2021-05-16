@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+.loader-wrapper {
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: inline-block;
+  z-index: 99;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 3px solid rgb(255, 139, 31);
+  animation: loader 5s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 5s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+
+  25% {
+    height: 0%;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  75% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0%;
+  }
+}
+
+/********** LOADER FINISH ***********************/
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000000;
+  background-image: linear-gradient(90deg, #000000 0%, #04619f 89%);
+}
+
+#nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  background-color: #000000;
+  background-image: linear-gradient(90deg, #000000 0%, #04619f 89%);
+  padding: 0 !important;
+}
+
+.navbar-brand img {
+  height: 40px;
+  padding-left: 10px;
+}
+
+.navbar-nav li {
+  pad: 0 10px;
+}
+
+.navbar-nav li a {
+  color: #fff !important;
+  font-weight: 600;
+  float: right;
+  text-align: left;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 30px !important;
+}
+
+.navbar-toggler::focus {
+  outline: none !important;
+}
+
+/* ######################################### NAVBAR FINISHED ####################################### */
+
+.leaderboard {
+  max-width: 25rem;
+  margin: 5rem auto;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 10px 1px rgb(0, 0, 0);
+}
+
+.container1 {
+  position: absolute;
+}
+
+li {
+  display: inline-block;
+}
+
+.sim{
+  text-decoration: none;
+  color: rgb(2, 27, 109);
+  font-weight: lighter;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #fbb034;
+  background-image: linear-gradient(90deg, #fbb034 0%, #ffdd00 89%);
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  height: 15rem;
+  position: relative;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+  position: absolute;
+  margin-left: 3rem;
+  top: 4rem;
+}
+
+.front-img {
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+}
+
+.container1{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-size: 0.9rem;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    transparent 10%,
+    rgba(22, 22, 22, 0.5)
+  );
+}
+
+.sim{
+  padding-top: 1rem;
+  padding-bottom: 0.75rem;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.active {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.active:hover {
+  color: rgb(0, 17, 73);
+}
+
+.active::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 5px;
+  background-color: #000000;
+  background-image: linear-gradient(90deg, #000000 0%, #04619f 89%);
+  transition: width 0.3s;
+}
+
+.active:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+.sim:first-child {
+  margin-left: 3rem;
+}
+
+table {
+  background-color: #16181e;
+  color: #999;
+  width: 100%;
+  border-collapse: collapse;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  overflow: hidden;
+}
+
+thead {
+  font-size: 0.7rem;
+  color: #555;
+  text-transform: uppercase;
+}
+
+tbody .nick {
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+tbody tr:nth-child(n) {
+  background-color: #0d0d0e;
+  transition: 0.1s;
+}
+
+tbody tr:nth-child(n):hover {
+  background-color: #000000;
+  transition: 0.1s;
+  transform: translateX(10px);
+}
+
+tbody tr:nth-child(2n) {
+  background-color: #1f232c;
+  transition: 0.2s;
+}
+
+tbody tr:nth-child(2n):hover {
+  background-color: #1f232c;
+  transition: 0.2s;
+  transform: translateX(-30px);
+}
+
+.nick {
+  text-align: left;
+}
+
+.rank,
+.sp,
+.kd {
+  text-align: right;
+}
+
+.rank {
+  width: 4ch;
+  padding-left: 1rem;
+}
+
+.sp,
+.kd {
+  width: 8ch;
+}
+
+th {
+  padding: 1.5rem 1rem 0.5rem;
+}
+
+td {
+  padding: 1rem 1rem;
+}
+
